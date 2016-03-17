@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.creatactil.coplp"
+		versionCode="1"
+		version   = "1.0.0">
+
+    <name>COP Las Palmas</name>
+
+    <description>
+			Colegio Oficial de la Psicología de Las Palmas
+    </description>
+
+    <author href="http://www.creatactil.com" email="info@creatactil.com">
+        Creatactil S.L.
+    </author>
+	
+	<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <string>100</string>
+    </gap:config-file>
+
+    	<preference name="permissions"                value="none"/>
+
+    <!-- Customize your app and platform with the preference element. -->
+	
+		<preference name="phonegap-version" value="cli-5.4.1" />
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="false" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="EnableViewportScale" value="true" />
+		<preference name="MediaPlaybackRequiresUserAction" value="true" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="gray" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="true" />
+		<preference name="SplashScreenDelay" value="8000" />
+		<preference name="ErrorUrl" value=""/>
+		<preference name="BackgroundColor" value=""/>
+		<preference name="KeepRunning" value="true"/>
+		<preference name="DisallowOverscroll" value="true"/>
+		<preference name="LoadingDialog" value=",Cargando....."/> 
+		<preference name="LoadUrlTimeoutValue" value="20000" />
+		<preference name="disable-cursor" value="true" />
+		<preference name="EnableViewportScale" value="true" />
+  
+   		<gap:platform name="ios" />     
+  
+     <!-- Plugins -->
+		
+		<plugin name="com.phonegap.plugins.pushplugin" source="pgb" spec="2.5.0" />
+		<plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" source="pgb" spec="1.2.0" />
+		<plugin name="org.apache.cordova.console" source="pgb" spec="0.2.13" />
+		<plugin name="org.apache.cordova.device" source="pgb" spec="0.2.12" />
+		<plugin name="org.apache.cordova.device-motion" source="pgb" spec="0.2.10" />
+		<plugin name="org.apache.cordova.device-orientation" source="pgb" spec="0.3.9" />
+		<plugin name="org.apache.cordova.dialogs" source="pgb" spec="0.2.10" />
+		<plugin name="cordova-plugin-file" spec="3.0.0" source="pgb" />
+		<plugin name="org.apache.cordova.file-transfer" source="pgb" spec="0.4.6" />
+		<plugin name="org.apache.cordova.globalization" source="pgb" spec="0.3.1" />
+		<plugin name="org.apache.cordova.inappbrowser" source="pgb" spec="0.5.2" />
+		<plugin name="org.apache.cordova.media" source="pgb" spec="0.2.13" />
+		<plugin name="org.apache.cordova.media-capture" source="pgb" spec="0.3.3" />
+		<plugin name="org.apache.cordova.network-information" source="pgb" spec="0.2.12" />
+		<plugin name="org.apache.cordova.splashscreen" source="pgb" spec="0.3.4" />
+		<plugin name="org.apache.cordova.vibration" source="pgb" spec="0.3.11" />
+		<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+
+   
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/media"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/notification"/>
+		<feature name="http://api.phonegap.com/1.0/device"/>
+		
+		<feature name="PushPlugin">
+  			<param name="ios-package" value="PushPlugin" />
+		</feature>
+		
+		   
+    <!-- Define app icon for each platform. -->
+   		<icon src="imagenes/57.png" gap:platform="ios" width="57" height="57" />
+		<icon src="imagenes/72.png" gap:platform="ios" width="72" height="72" />
+		<icon src="imagenes/114.png" gap:platform="ios" width="114" height="114" />
+		<icon src="imagenes/144.png" gap:platform="ios" width="144" height="144" />
+		<icon src="imagenes/76.png" gap:platform="ios" width="76" height="76" />
+		<icon src="imagenes/120.png" gap:platform="ios" width="120" height="120" />
+		<icon src="imagenes/152.png" gap:platform="ios" width="152" height="152" />
+		
+		
+		
+		<gap:splash src="splash/iphone3_4_4S.png" gap:platform="ios" width="320" height="480" />
+		<gap:splash src="splash/iphone3_4_4S(horizontal).png" gap:platform="ios" width="480" height="320" />
+		<gap:splash src="splash/iphone3_4_4S(grande).png" gap:platform="ios" width="640" height="960" />
+		<gap:splash src="splash/iphone3_4_4S(horizontal).png" gap:platform="ios" width="960" height="640" />
+		<gap:splash src="splash/640x1136.png" gap:platform="ios" width="640" height="1136" />
+		<gap:splash src="splash/1136x640.png" gap:platform="ios" width="1136" height="640" />
+		<gap:splash src="splash/ipad_ipadmini.png" gap:platform="ios" width="768" height="1024 " />
+		<gap:splash src="splash/ipad_ipadmini(horizontal).png" gap:platform="ios" width="1024" height="768" />
+		<gap:splash src="splash/ipad2_ipad3.png" gap:platform="ios" width="1536" height="2048" />
+		<gap:splash src="splash/ipad2_ipad3(horizontal).png" gap:platform="ios" width="2048" height="1536" />		
+		
+	    
+		<gap:splash src="splash.png" />
+    <!--
+        Define access to external domains.
+
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+
+        Otherwise, you can specify specific domains:
+    -->
+    	<access origin="*" subdomains="true"  />
+  
+
+</widget>
